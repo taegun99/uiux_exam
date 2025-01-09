@@ -289,7 +289,6 @@ header {
 
 .scroll_atc_wrap {
   overflow-x: hidden;
-  margin-bottom: var(--module-gap);
   padding: 100px 0;
   background: #F5F6F8;
 }
@@ -300,36 +299,12 @@ header {
 
 .scroll_atc_list {
   overflow: visible;
-  position: relative;
   margin-left: auto;
   margin-right: auto;
   padding: 0;
 }
-
-.swiper-wrapper {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  transition-property: transform;
-  box-sizing: content-box;
-}
-
 .swiper-slide {
-  flex-shrink: 0;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  transition-property: transform;
-  -webkit-backface-visibility: hidden;
-  -webkit-transform: translate3d(0, 0, 0);
-}
-
-.atcbox a {
-  display: block;
-  position: relative;
-  width: 100%;
-  height: 100%;
+  background-color: rgba(0,0,0,0);
 }
 
 .scroll_atc_list li .imgbox {
@@ -374,6 +349,54 @@ header {
   word-break: break-all;
   letter-spacing: -0.01em;
   text-align: left;
+}
+
+.swiper-container-initialized .control {
+    display: block;
+}
+
+.scroll_atc_list .swiper-scrollbar {
+    height: 2px;
+    margin-top: 60px;
+    background-color: #fff;
+}
+
+.swiper-scrollbar {
+    border-radius: 10px;
+    position: relative;
+    -ms-touch-action: none;
+    background-color: #dbdbdb;
+    opacity: 1 !important;
+}
+
+.swiper-scrollbar-drag {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: #111;
+    border-radius: 10px;
+    left: 0;
+    top: 0;
+}
+
+.scroll_atc_list .swiper-scrollbar .swiper-scrollbar-drag {
+    background-color: #111;
+}
+.issue_tit_wrap {
+  margin-bottom: 40px;
+}
+
+.issue_atc_wrap  .issue_tit_area {
+    border-bottom: 1px solid #111;
+}
+
+.issue_atc_wrap .issue_tit_wrap .tit {
+    margin-bottom: 8px;
+    font-size: 48px;
+    line-height: 60px;
+}
+.issue_atc_list {
+    margin: 0 -12px;
 }
 
 body, ul ,li {
